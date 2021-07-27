@@ -8,7 +8,8 @@ To ensure the experiment encounters 'pristine' solar wind conditions, it is impo
 
 <p align="center">
 
-  <img src="/images/moon_orbit_graphic.png">
+  <img width="300" height="300" src="/images/moon_orbit_graphic.png">
+  
   This is an image
 
 </p>
