@@ -12,7 +12,7 @@ To ensure the experiment encounters 'pristine' solar wind conditions, it is impo
 
 </p>
 
-<h1 align="center">Modified from Tim Stubbs/University of Maryland/GSFC</h1>
+<h1 align="center"><font size="1">Modified from Tim Stubbs/University of Maryland/GSFC</font></h1>
 
 
 This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Knipp - step in as space weather researchers! Our specific goal was to predict the position of the moon with respect to the magnetotail in order to provide a yes/no decision table to data collection times.
