@@ -4,8 +4,15 @@ This work contributed in a small way to the experimental design of the [Deep Spa
 
 To ensure the experiment encounters 'pristine' solar wind conditions, it is important to avoid data collection during the spacecraft's (and consequently, the moon's) transit through the magnetotail. The solar wind interacts with the Earth's magnetic field to form the magnetosphere, which includes a long tail that acts as a barrier to energetic particles.
 
-| ![Moon Orbit Diagram](/images/moon_orbit_graphic.png) |
-| :--: |
+![Moon Orbit Diagram](/images/moon_orbit_graphic.png)
+
+<p align="center">
+
+  <img src="/images/moon_orbit_graphic.png">
+  This is an image
+
+</p>
+
 
 This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Knipp - step in as space weather researchers! Our specific goal was to predict the position of the moon with respect to the magnetotail in order to provide a yes/no decision table to data collection times.
 
