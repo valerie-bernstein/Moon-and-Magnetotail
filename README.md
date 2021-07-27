@@ -8,11 +8,11 @@ To ensure the experiment encounters 'pristine' solar wind conditions, it is impo
 
 <p align="center">
 
-  <img width="300" height="300" src="/images/moon_orbit_graphic.png">
-  
-  This is an image
+  <img width="300" height="300" src="/images/moon_orbit_graphic.png" alt="Moon Orbit Diagram">
 
 </p>
+
+<h1 align="center">Modified from Tim Stubbs/University of Maryland/GSFC</h1>
 
 
 This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Knipp - step in as space weather researchers! Our specific goal was to predict the position of the moon with respect to the magnetotail in order to provide a yes/no decision table to data collection times.
