@@ -44,7 +44,9 @@ In the above equation, square brackets indicate matrices, *x*, *y*, and *z* indi
 
 ![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BT%7D%20%3D%20%5B%5Clambda_%7B%5Codot%7D%2CZ%5D%20%5Ccdot%20%5B%5Cepsilon%2CX%5D)
 
-where ![equation](https://latex.codecogs.com/gif.latex?%5B%5Clambda_%7B%5Codot%7D%2CZ%5D) is a rotation by the angle ![equation](https://latex.codecogs.com/gif.latex?%5Clambda_%7B%5Codot%7D) (the Sun's ecliptic longitude) about the z-axis
+where ![equation](https://latex.codecogs.com/gif.latex?%5B%5Clambda_%7B%5Codot%7D%2CZ%5D) is a rotation by the angle ![equation](https://latex.codecogs.com/gif.latex?%5Clambda_%7B%5Codot%7D) (the Sun's ecliptic longitude) about the z-axis, and ![equation](https://latex.codecogs.com/gif.latex?%5B%5Cepsilon%2C%20X%5D) is a rotation by the angle ![equation](https://latex.codecogs.com/gif.latex?%5Cepsilon) (the obliquity of the ecliptic) about the x-axis. These two rotations represent the rotation from Earth's equator to the ecliptic plane and the rotation in the ecliptic plane from the First Point of Aries to the Earth-Sun direction. The GSE coordinate are defined such that the +x direction is pointed from the Earth to the Sun, the +y direction is pointed towards dusk, and +z is in the northward direction out of the ecliptic plane. For further information about how to obtain the angle necessary to perform these rotations, please refer to [M. Hapgood (1992)](https://www.sciencedirect.com/science/article/pii/003206339290012D) and `GEItoGSE.py`.
+
+Given the moon's position in GSE coordinates, `main.py` finds the intersection of the lunar orbit with the bounds of the magnetotail and bow shock is GSE coordinates. Since the moon's orbital radius is ~60![equation](https://latex.codecogs.com/gif.latex?R_E) 
 
 
 ## Acknowledgments
