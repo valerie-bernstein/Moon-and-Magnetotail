@@ -36,7 +36,15 @@ The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/eph
 
 ![alt text](images/moon_phase_plot.png)
 
+To quantify the magnetotail transit times more precisely than using the 6-day window estimate, `GEItoGSE.py` coverts the PyEphem-provided lunar position in RA and dec (which are Geocentric Equatorial Inertial, or GEI, coordinates) into Geocentric Solar Ecliptic (GSE) coordinates. This coordinate conversion is performed because the magnetotail lies in the Sun-Earth ecliptic plane. The coordinate conversion is provided by [M. Hapgood (1992)](https://www.sciencedirect.com/science/article/pii/003206339290012D) and outlined below.
+
+$$\begin{bmatrix}
+   x \\
+   y \\
+   z \end{bmatrix}_{GSE}$$
+
 ## Acknowledgments
 * Luis Zea and the entire [Deep Space Radiation Genomics (DSRG)](https://www.colorado.edu/faculty/zea-luis/deep-space-radiation-genomics-dsrg-artemis-1) team
 * The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/), developed by Brandon Rhodes
+* Mike Hapgood, [Space Physics Coordinate Transforms: A User Guide](https://www.sciencedirect.com/science/article/pii/003206339290012D)
 * Tim Stubbs (University of Maryland, Goddard Space Flight Center) for the diagram of the moon and the magnetotail, which we accessed from [nasa.gov](https://www.nasa.gov/topics/moonmars/features/magnetotail_080416.html) and futher modified
