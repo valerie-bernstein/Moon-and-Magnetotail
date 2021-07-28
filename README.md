@@ -27,6 +27,16 @@ This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Kni
    ```sh
    python main.py 'start date' 'end date' 
    ```
+
+## Usage
+
+It is important for the DSRF experiment to collect data for 3 days at a time and be conducted while in the free-flowing solar wind outside the magnetotail and bow shock. To accurately predict which times the experiment should or should not take place, the moon's position is calculated and compared to the position of the magnetotail and bow shock.
+
+The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/), developed by Rhodes, is used to calculate the moon's right ascension (RA), declination (dec), and distance from the Earth given a specified date and time. PyEphem is also used to compute the moon phase at a specified time, which is given as the percentage of the moon's surface that is illuminated. `main.py` computes the moon's RA, dec, and phase every hour between the user-specified start and end dates. `find_full_moons.py` also identifies full moon times, when the surface illumination = 100%. Below is a plot of the moon phase from 2021 to 2024, where the red highlighted areas indicate the approximate 6 day windows in which the moon passes inside the magnetotail.
+
+![alt text](images/moon_phase_plot.png)
+
 ## Acknowledgments
 * Luis Zea and the entire [Deep Space Radiation Genomics (DSRG)](https://www.colorado.edu/faculty/zea-luis/deep-space-radiation-genomics-dsrg-artemis-1) team
-* The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/)
+* The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/), developed by Brandon Rhodes
+* Tim Stubbs (University of Maryland, Goddard Space Flight Center) for the diagram of the moon and the magnetotail, which we accessed from [nasa.gov](https://www.nasa.gov/topics/moonmars/features/magnetotail_080416.html) and futher modified
