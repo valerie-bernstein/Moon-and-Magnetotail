@@ -42,7 +42,7 @@ To quantify the magnetotail transit times more precisely than using the 6-day wi
 
 In the above equation, square brackets indicate matrices, *x*, *y*, and *z* indicate cartesian vector components, and *T* is the transformation matrix. *T* is defined as the matrix multiplication of two rotation matrices:
 
-![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BT%7D%20%3D%20%5B%5Clambda_%7B%5Codot%7D%2CZ%5D%20%5Ccdot%20%5B%5Cepsilon%2CX%5D) add some text here
+where ![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BT%7D%20%3D%20%5B%5Clambda_%7B%5Codot%7D%2CZ%5D%20%5Ccdot%20%5B%5Cepsilon%2CX%5D) add some text here
 
 
 ## Acknowledgments
