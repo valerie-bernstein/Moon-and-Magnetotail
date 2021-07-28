@@ -8,10 +8,10 @@ To ensure the experiment encounters 'pristine' solar wind conditions, it is impo
   <img width="350" height="400" src="/images/moon_orbit_graphic.png" alt="Moon Orbit Diagram">
 </p>
 
-<p align="center"><font size="1">Modified from Tim Stubbs/University of Maryland/GSFC</font></p>
+<p align="center"><font size="1">Modified from Tim Stubbs/University of Maryland/GSFC, accessed from <a href="https://www.nasa.gov/topics/moonmars/features/magnetotail_080416.html">nasa.gov</a></font></p>
 
 
-This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Knipp - step in as space weather researchers! Our specific goal was to predict the position of the moon with respect to the magnetotail in order to provide a yes/no decision table to data collection times.
+This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Knipp - step in as space weather researchers! Our specific goal was to predict the position of the moon with respect to the magnetotail between given start and end dates in order to provide a yes/no decision table for data collection times.
 
 ## Prerequisites (Python 3)
 * [NumPy](https://numpy.org/install/)
@@ -27,3 +27,6 @@ This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Kni
    ```sh
    python main.py 'start date' 'end date' 
    ```
+## Acknowledgments
+* Luis Zea and the entire [Deep Space Radiation Genomics (DSRG)](https://www.colorado.edu/faculty/zea-luis/deep-space-radiation-genomics-dsrg-artemis-1) team
+* The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/)
