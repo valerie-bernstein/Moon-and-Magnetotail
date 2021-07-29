@@ -54,9 +54,6 @@ where ![equation](https://latex.codecogs.com/gif.latex?%7Cx_%7Bmoon%7D%7C) is th
 
 ![Moon Position 1](images/moon_pos_1.png)
 
-
-![Moon Position 2](images/moon_pos_2.png)
-
 In the above images, the Earth is located at (0,0,0). The purple data points represent the three days to be excluded from the "Yes" data collection dates prior to the moon's intersection with the bow shock. The yellow data points represent when the moon is transiting the bow shock, and the red data points represent when the moon is transiting the magnetotail. `main.py` also plots the moon phase over time, where the 3-day window prior to the moon entering the bow shock, the bow shock transit times, and the magnetotail transit times are all overlaid and distinguished by the same color scheme as the above plots.
 
 ![Moon Phase Extras](images/moon_phase_extra_areas.png)
