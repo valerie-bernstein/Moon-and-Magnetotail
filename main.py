@@ -45,7 +45,7 @@ def main(start_date, end_date):
 
     #make the moon phase plot
     plt.rcParams.update({'font.size': 16})
-    fig,ax = plt.subplots(figsize=(20,8))
+    fig,ax = plt.subplots(figsize=(16,6))
     ax.plot(dates, moon_phase)
     counter = 0
     for idx in full_moon_indices:
@@ -218,7 +218,7 @@ def main(start_date, end_date):
     plt.rcParams.update({'font.size': 16})
 
     #plot of illuminance with additions
-    fig,ax = plt.subplots(figsize=(20,8))
+    fig,ax = plt.subplots(figsize=(16,6))
     ax.plot(dates, moon_phase)
     ax.plot(dates[idx_bow_arr-(3*24)], moon_phase[idx_bow_arr-(3*24)], '.', c='violet', label='3-day window before entering')
     ax.plot(dates[idx_bow_arr], moon_phase[idx_bow_arr], '.', c='gold', label='Bowshock')
@@ -230,7 +230,7 @@ def main(start_date, end_date):
     plt.show()
 
     #plot of illuminance zoomed-in on one month
-    fig,ax = plt.subplots(figsize=(20,8))
+    fig,ax = plt.subplots(figsize=(16,6))
     ax.plot(dates, moon_phase)
     ax.plot(dates[idx_bow_arr-(3*24)], moon_phase[idx_bow_arr-(3*24)], '.', c='violet', label='3-day window before entering')
     ax.plot(dates[idx_bow_arr], moon_phase[idx_bow_arr], '.', c='gold', label='Bowshock')
