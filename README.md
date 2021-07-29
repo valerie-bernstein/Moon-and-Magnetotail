@@ -57,7 +57,15 @@ where ![equation](https://latex.codecogs.com/gif.latex?%7Cx_%7Bmoon%7D%7C) is th
 
 ![Moon Position 2](images/moon_pos_2.png)
 
-In the above images, the Earth is located at (0,0,0).
+In the above images, the Earth is located at (0,0,0). The purple data points represent the three days to be excluded from the "Yes" data collection dates prior to the moon's intersection with the bow shock. The yellow data points represent when the moon is transiting the bow shock, and the red data points represent when the moon is transiting the magnetotail. `main.py` also plots the moon phase over time, where the 3-day window prior to the moon entering the bow shock, the bow shock transit times, and the magnetotail transit times are all overlaid and distinguished by the same color scheme as the above plots.
+
+![Moon Phase Extras](images/moon_phase_extra_areas.png)
+
+`main.py` can also display a zoomed-in view of this phase plot for a single lunar cycle (one month). This allows for a closer look at how much time the moon spends inside the bow shock and magnetotail in a month. Vertical lines indicate the times when the moon enters the regions of interest.
+
+![Moon Phase Zoomed](images/moon_phase_zoomed_in.png)
+
+The final product requested for the DSRG experiment was a table of dates indicating appropriate experimental data collection times during a future multi-year window, organized by the date and a "Yes" or "No" decision for starting data collection. `main.py` provides this information in the form of Python *datetime* objects for two tables: one that tells the user to stop data collection in both the bow shock and the magnetotail, and a second that avoids data collection in only the magnetotail. For Table 1 and Table 2 dates provided by `main.py`, a "Yes" date indicates the start of a window during which the DSRG experiment can collect data. The nearest following "No" date then indicates the start of a period where data collection should be avoided due to the moon transiting the bow shock and/or magnetotail.
 
 ## Acknowledgments
 * Luis Zea and the entire [Deep Space Radiation Genomics (DSRG)](https://www.colorado.edu/faculty/zea-luis/deep-space-radiation-genomics-dsrg-artemis-1) team
