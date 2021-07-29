@@ -62,7 +62,7 @@ def main(start_date, end_date):
 
 
     #make the moon orbit plot
-    plt.rcParams.update({'font.size': 16})
+    plt.rcParams.update({'font.size': 12})
 
     R = 30 * 6378 #km #radius of the magnetotail
     R_bow = 50 * 6378 #km #radius of the bowshock
