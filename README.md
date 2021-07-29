@@ -72,3 +72,11 @@ The final product requested for the DSRG experiment was a table of dates indicat
 * Mike Hapgood, [Space Physics Coordinate Transforms: A User Guide (1992)](https://www.sciencedirect.com/science/article/pii/003206339290012D) and [Modelling Long-Term Trends in Lunar Exposure to the Earth's Plasmasheet(2007)](https://angeo.copernicus.org/articles/25/2037/2007/)
 * D.G. Sibeck and R.-Q. Lin, [Size and Shape of the Distant Magnetotail (2014)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013JA019471)
 * Tim Stubbs (University of Maryland, Goddard Space Flight Center) for the diagram of the moon and the magnetotail, which we accessed from [nasa.gov](https://www.nasa.gov/topics/moonmars/features/magnetotail_080416.html) and futher modified
+
+## Cite
+
+If you use this software, we would be grateful if you could cite it as follows:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5144032.svg)](https://doi.org/10.5281/zenodo.5144032)
+
+Bernstein, V. and Wahl, K. (2021). Identifying and Visualizing the Moon's Position with respect to the Earth's Magnetotail (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.5144032
