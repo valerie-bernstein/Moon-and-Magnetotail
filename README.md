@@ -53,6 +53,8 @@ Given the moon's position in GSE coordinates, `main.py` finds the intersection o
 where ![equation](https://latex.codecogs.com/gif.latex?%7Cx_%7Bmoon%7D%7C) is the absolute value of the x-component of the moon's GSE position, and ![equation](https://latex.codecogs.com/gif.latex?V_%7Bsw%7D) is the solar wind velocity in units of km/s. This offset reflects the aberration of the magnetotail due to Earth's motion around the sun (average speed being 29 km/s) ([Hapgood, 2007](https://angeo.copernicus.org/articles/25/2037/2007/), and personal communication). A typical solar wind speed used in `main.py` is 400 km/s. The bow shock circle is centered around the magnetotail with a radius of ~50![equation](https://latex.codecogs.com/gif.latex?R_E) ([Sibeck & Lin, 2014](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013JA019471)). The following plots show the moon's orbit in GSE coordinates over the course of 3 years as well as the 2D cross-sections of the magnetotail and bow shock (the inner and outer black circles).
 
 ![Moon Position 1](images/moon_pos_1.png)
+
+
 ![Moon Position 2](images/moon_pos_2.png)
 
 In the above images, the Earth is located at (0,0,0).
