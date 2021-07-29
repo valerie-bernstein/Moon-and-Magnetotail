@@ -30,7 +30,7 @@ This is where our team - Valerie Bernstein (myself), Kaiya Wahl, and Delores Kni
 
 ## Usage
 
-It is important for the DSRF experiment to collect data for 3 days at a time and be conducted while in the free-flowing solar wind outside the magnetotail and bow shock. To accurately predict which times the experiment should or should not take place, the moon's position is calculated and compared to the position of the magnetotail and bow shock.
+It is important for the DSRG experiment to collect data for 3 days at a time and be conducted while in the free-flowing solar wind outside the magnetotail and bow shock. To accurately predict which times the experiment should or should not take place, the moon's position is calculated and compared to the position of the magnetotail and bow shock.
 
 The Python astronomical ephemeris library [PyEphem](https://pypi.org/project/ephem/), developed by Rhodes (2011), is used to calculate the moon's right ascension (RA), declination (dec), and distance from the Earth given a specified date and time. PyEphem is also used to compute the moon phase at a specified time, which is given as the percentage of the moon's surface that is illuminated. `main.py` computes the moon's RA, dec, and phase every hour between the user-specified start and end dates. `find_full_moons.py` also identifies full moon times, when the surface illumination = 100%. Below is a plot of the moon phase from 2021 to 2024, where the red highlighted areas indicate the approximate 6 day windows in which the moon passes inside the magnetotail.
 
@@ -58,11 +58,11 @@ where ![equation](https://latex.codecogs.com/gif.latex?%7Cx_%7Bmoon%7D%7C) is th
 
 In the above images, the Earth is located at (0,0,0). The purple data points represent the three days to be excluded from the "Yes" data collection dates prior to the moon's intersection with the bow shock. The yellow data points represent when the moon is transiting the bow shock, and the red data points represent when the moon is transiting the magnetotail. `main.py` also plots the moon phase over time, where the 3-day window prior to the moon entering the bow shock, the bow shock transit times, and the magnetotail transit times are all overlaid and distinguished by the same color scheme as the above plots.
 
-![Moon Phase Extras](images/moon_phase_extra_areas.png)
+![Moon Phase Extras](images/moon_phase_plot_extra_areas.png)
 
 `main.py` can also display a zoomed-in view of this phase plot for a single lunar cycle (one month). This allows for a closer look at how much time the moon spends inside the bow shock and magnetotail in a month. Vertical lines indicate the times when the moon enters the regions of interest.
 
-![Moon Phase Zoomed](images/moon_phase_zoomed_in.png)
+![Moon Phase Zoomed](images/moon_phase_plot_zoomed_in.png)
 
 The final product requested for the DSRG experiment was a table of dates indicating appropriate experimental data collection times during a future multi-year window, organized by the date and a "Yes" or "No" decision for starting data collection. `main.py` provides this information in the form of Python *datetime* objects for two tables: one that tells the user to stop data collection in both the bow shock and the magnetotail, and a second that avoids data collection in only the magnetotail. For Table 1 and Table 2 dates provided by `main.py`, a "Yes" date indicates the start of a window during which the DSRG experiment can collect data. The nearest following "No" date then indicates the start of a period where data collection should be avoided due to the moon transiting the bow shock and/or magnetotail.
 
